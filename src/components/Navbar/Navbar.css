@@ -19,20 +19,24 @@
 }
 
 .nav-link:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 30px;
 }
 
 .nav-link-a {
   display: block;
   border-top: 4px solid transparent;
   color: var(--white-75);
-  padding: 30px 0;
+  padding: 30px 2px;
 }
 
 .nav-link-a:hover,
 .nav-link-a-active {
   transition: all 0.2s ease-in-out;
   color: var(--white);
+}
+
+.nav-link-a:focus {
+  outline: var(--white-20) dotted 2px;
 }
 
 .navbar-hamburger {
