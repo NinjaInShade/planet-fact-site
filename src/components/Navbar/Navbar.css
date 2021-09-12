@@ -1,0 +1,82 @@
+.navbar {
+  border-bottom: 1px solid var(--white-20);
+  padding: 0 32px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-l);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 32px;
+}
+
+.nav-link-a {
+  display: block;
+  border-top: 4px solid transparent;
+  color: var(--white-75);
+  padding: 30px 0;
+}
+
+.nav-link-a:hover,
+.nav-link-a-active {
+  transition: all 0.2s ease-in-out;
+  color: var(--white);
+}
+
+.navbar-hamburger {
+  display: none;
+}
+
+.nav-link-a:hover.nav-link-mercury,
+.nav-link-a-active.nav-link-mercury {
+  border-top: 4px solid var(--mercury);
+}
+.nav-link-a:hover.nav-link-venus,
+.nav-link-a-active.nav-link-venus {
+  border-top: 4px solid var(--venus);
+}
+.nav-link-a:hover.nav-link-earth,
+.nav-link-a-active.nav-link-earth {
+  border-top: 4px solid var(--earth);
+}
+.nav-link-a:hover.nav-link-mars,
+.nav-link-a-active.nav-link-mars {
+  border-top: 4px solid var(--mars);
+}
+.nav-link-a:hover.nav-link-jupiter,
+.nav-link-a-active.nav-link-jupiter {
+  border-top: 4px solid var(--jupiter);
+}
+.nav-link-a:hover.nav-link-saturn,
+.nav-link-a-active.nav-link-saturn {
+  border-top: 4px solid var(--saturn);
+}
+.nav-link-a:hover.nav-link-uranus,
+.nav-link-a-active.nav-link-uranus {
+  border-top: 4px solid var(--uranus);
+}
+.nav-link-a:hover.nav-link-neptune,
+.nav-link-a-active.nav-link-neptune {
+  border-top: 4px solid var(--neptune);
+}
+
+@media (max-width: 968px) {
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0 24px;
+  }
+}

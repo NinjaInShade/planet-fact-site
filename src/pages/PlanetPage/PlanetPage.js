@@ -24,8 +24,8 @@ export default function PlanetPage() {
   }, [planet]);
 
   return (
-    <main className='page-center flex'>
-      <h1>Default home page</h1>
+    <main>
+      <h3>Default home page</h3>
     </main>
   );
 }

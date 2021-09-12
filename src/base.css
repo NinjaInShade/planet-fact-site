@@ -27,6 +27,8 @@
   --gray-dark: #38384f;
   --gray: #838391;
   --white: #ffffff;
+  --white-75: hsla(0, 0%, 100%, 0.75);
+  --white-20: hsla(0, 0%, 100%, 0.2);
 
   /* Typography */
   --h1: 4.375rem;
@@ -63,9 +65,13 @@
   --nav-mobile-ls: 1.36px;
 
   /* Other */
+  --container-l: 1368px;
+  --container: 1100px;
 }
 
 body {
+  background: repeat-y url('./assets/background-stars.svg') center / cover;
+  background-color: var(--black);
 }
 
 h1 {
@@ -98,6 +104,8 @@ h2 {
 }
 
 .logo {
+  color: #fff;
+  text-transform: uppercase;
   font-family: 'Antonio', sans-serif;
   font-size: var(--logo);
   line-height: var(--logo-lh);
@@ -105,6 +113,8 @@ h2 {
 }
 
 .nav {
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: var(--nav);
   line-height: var(--nav-lh);
   letter-spacing: var(--nav-ls);
@@ -117,6 +127,7 @@ h2 {
 }
 
 button {
+  cursor: pointer;
   outline: none;
   background: none;
   border: none;
