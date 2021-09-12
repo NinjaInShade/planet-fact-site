@@ -14,6 +14,8 @@ export default function PlanetPage() {
     planet = DEFAULT_PLANET;
   }
 
+  console.log(planetData);
+
   useEffect(() => {
     // Loads the appropriate planet data into state based on URL param from planetsData.json file
     for (let i = 0; i < PlanetsDataJSON.length; i++) {
