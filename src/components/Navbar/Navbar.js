@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import MobileNav from '../MobileNav/MobileNav';
 import PlanetsDataJSON from '../../planetsData.json';
 import './Navbar.css';
 
 export default function Navbar() {
-  const [sidebarActive, setSidebarActive] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
 
   return (
     <nav className='navbar'>
+      <MobileNav active={mobileNav} setActive={setMobileNav} links={PlanetsDataJSON} />
       <div className='navbar-container'>
         <strong className='logo'>The Planets</strong>
         <ul className='nav-links'>
@@ -26,9 +28,9 @@ export default function Navbar() {
           })}
         </ul>
         <button
-          className={`navbar-hamburger ${sidebarActive && 'navbar-hamburger-active'}`}
+          className={`navbar-hamburger ${mobileNav && 'navbar-hamburger-active'}`}
           onClick={() => {
-            setSidebarActive(!sidebarActive);
+            setMobileNav(!mobileNav);
           }}
         >
           <svg xmlns='http://www.w3.org/2000/svg' width='24' height='17'>

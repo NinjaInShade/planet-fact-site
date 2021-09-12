@@ -1,0 +1,77 @@
+.mobile-nav {
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--black);
+  height: calc(100vh - 70px);
+  top: calc(100% + 1px);
+  padding: 45px 24px 0 24px;
+  max-height: 0;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+
+.mobile-nav-active {
+  max-height: 100vh;
+}
+
+.mobile-nav-link {
+  padding: 20px 0;
+}
+
+.mobile-nav-link:not(:last-child) {
+  border-bottom: 1px solid var(--white-10);
+}
+
+.mobile-nav-link:first-child {
+  padding-top: 0;
+}
+
+.mobile-nav-link-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-link-a svg {
+  opacity: 40%;
+}
+
+.mobile-nav-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav-circle {
+  border-radius: 50%;
+  margin-right: 24px;
+  height: 20px;
+  width: 20px;
+}
+
+.mobile-nav-link-mercury .mobile-nav-circle {
+  background-color: #def4fc;
+}
+.mobile-nav-link-venus .mobile-nav-circle {
+  background-color: #f7cc7f;
+}
+.mobile-nav-link-earth .mobile-nav-circle {
+  background-color: #545bfe;
+}
+.mobile-nav-link-mars .mobile-nav-circle {
+  background-color: #ff6a45;
+}
+.mobile-nav-link-jupiter .mobile-nav-circle {
+  background-color: #ecad7a;
+}
+.mobile-nav-link-saturn .mobile-nav-circle {
+  background-color: #fccb6b;
+}
+.mobile-nav-link-uranus .mobile-nav-circle {
+  background-color: #65f0d5;
+}
+.mobile-nav-link-neptune .mobile-nav-circle {
+  background-color: #497efa;
+}

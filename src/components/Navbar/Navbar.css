@@ -1,6 +1,8 @@
 .navbar {
+  position: relative;
   border-bottom: 1px solid var(--white-20);
   padding: 0 32px;
+  z-index: 3;
 }
 
 .navbar-container {
@@ -157,8 +159,7 @@
   }
 
   .navbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
   }
 
   .navbar-container {
