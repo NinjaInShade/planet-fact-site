@@ -1,36 +1,6 @@
-@import-normalize; /* bring in normalize.css styles */
-@import 'normalize.css/opinionated.css';
-
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  background: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  /* Define custom vars here */
-
-  /* Neutral colours */
-  --neutral-50: #f9fafb;
-  --neutral-100: #f3f4f6;
-  --neutral-200: #e5e7eb;
-  --neutral-300: #d1d5db;
-  --neutral-400: #9ca3af;
-  --neutral-500: #6b7280;
-  --neutral-600: #4b5563;
-  --neutral-700: #374151;
-  --neutral-800: #1f2937;
-  --neutral-900: #111827;
-}
-
-p {
-  line-height: 2rem;
-}
-
-button {
+.btn {
   cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
 }

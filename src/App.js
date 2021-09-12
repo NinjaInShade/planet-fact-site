@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
-import './base.css';
 import './buttons.css';
+import './base.css';
 
 const PlanetPage = lazy(() => import('./pages/PlanetPage/PlanetPage'));
 

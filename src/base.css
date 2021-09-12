@@ -1,5 +1,6 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Antonio', sans-serif; */
+  font-family: 'Spartan', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -12,8 +13,20 @@
   font-size: 16px;
 
   /* Primary */
+  --mercury: #419ebb;
+  --venus: #eda249;
+  --earth: #6d2ed5;
+  --mars: #d14c32;
+  --jupiter: #d83a34;
+  --saturn: #cd5120;
+  --uranus: #1ec1a2;
+  --neptune: #2d68f0;
 
   /* Neutral */
+  --black: #070724;
+  --gray-dark: #38384f;
+  --gray: #838391;
+  --white: #ffffff;
 
   /* Typography */
   --h1: 1.75rem;
