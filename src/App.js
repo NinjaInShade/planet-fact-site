@@ -4,8 +4,7 @@ import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 import './base.css';
 import './buttons.css';
 
-const Home = lazy(() => import('./pages/Home/Home'));
-const NoMatch = lazy(() => import('./pages/NoMatch/NoMatch'));
+const PlanetPage = lazy(() => import('./pages/PlanetPage/PlanetPage'));
 
 function App() {
   return (
@@ -13,13 +12,13 @@ function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <Switch>
           {/* Entry page for application - the home page */}
-          <Route path='/' exact>
-            <Home />
+          <Route path='/:planet' exact>
+            <PlanetPage />
           </Route>
 
           {/* 404 page not found route ( any routes not matching go here ) */}
           <Route path='*'>
-            <NoMatch />
+            <PlanetPage />
           </Route>
         </Switch>
       </Suspense>
