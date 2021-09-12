@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { planetsConfig } from '../../planetsConfig.js';
 import { NavLink } from 'react-router-dom';
 import MobileNav from '../MobileNav/MobileNav';
 import PlanetsDataJSON from '../../planetsData.json';
@@ -22,7 +23,7 @@ export default function Navbar() {
                   isActive={(match, location) => {
                     if (match) return true;
 
-                    if (location.pathname === '/' && planetData.name.toLowerCase() === 'mercury') {
+                    if (location.pathname === '/' && planetData.name.toLowerCase() === planetsConfig.DEFAULT_PLANET) {
                       return true;
                     }
                   }}

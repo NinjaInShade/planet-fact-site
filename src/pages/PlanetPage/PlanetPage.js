@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { planetsConfig } from '../../planetsConfig.js';
 import PlanetsDataJSON from '../../planetsData.json';
 import './PlanetPage.css';
-
-const DEFAULT_PLANET = 'mercury';
 
 export default function PlanetPage() {
   const [planetData, setPlanetData] = useState({});
@@ -11,7 +10,7 @@ export default function PlanetPage() {
   let { planet } = useParams();
 
   if (!planet) {
-    planet = DEFAULT_PLANET;
+    planet = planetsConfig.DEFAULT_PLANET;
   }
 
   console.log(planetData);
