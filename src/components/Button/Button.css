@@ -3,4 +3,7 @@
   outline: none;
   border: none;
   background: none;
+  font-size: var(--button);
+  line-height: var(--button-lh);
+  letter-spacing: var(--button-ls);
 }

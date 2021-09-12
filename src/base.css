@@ -29,26 +29,91 @@
   --white: #ffffff;
 
   /* Typography */
-  --h1: 1.75rem;
+  --h1: 4.375rem;
+  --h1-lh: 4.375rem;
 
-  --body: 1rem;
+  --h2: 0.688rem;
+  --h2-lh: 25px;
+  --h2-ls: 1px;
+
+  --body: 0.875rem;
+  --body-lh: 25px;
+
+  --body-s: 0.875rem;
+  --body-s-lh: 25px;
+
+  --button: 0.75rem;
+  --button-lh: 25px;
+  --button-ls: 2.57px;
+
+  --strong: 2.5rem;
+  --strong-lh: 2.5rem;
+  --strong-ls: -1.5px;
+
+  --logo: 1.75rem;
+  --logo-lh: 1.75rem;
+  --logo-ls: -1.05px;
+
+  --nav: 0.688rem;
+  --nav-lh: 25px;
+  --nav-ls: 1px;
+
+  --nav-mobile: 0.938rem;
+  --nav-mobile-lh: 25px;
+  --nav-mobile-ls: 1.36px;
 
   /* Other */
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 h1 {
+  font-family: 'Antonio', sans-serif;
   font-size: var(--h1);
+  line-height: var(--h1-lh);
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: var(--h2-lh);
+  letter-spacing: var(--h2-ls);
 }
 
 .body {
   font-size: var(--body);
+  line-height: var(--body-lh);
+}
+
+.body-s {
+  font-size: var(--body-s);
+  line-height: var(--body-s-lh);
+}
+
+.strong {
+  font-family: 'Antonio', sans-serif;
+  font-size: var(--strong);
+  line-height: var(--strong-lh);
+  letter-spacing: var(--strong-ls);
+}
+
+.logo {
+  font-family: 'Antonio', sans-serif;
+  font-size: var(--logo);
+  line-height: var(--logo-lh);
+  letter-spacing: var(--logo-ls);
+}
+
+.nav {
+  font-size: var(--nav);
+  line-height: var(--nav-lh);
+  letter-spacing: var(--nav-ls);
+}
+
+.nav-mobile {
+  font-size: var(--nav-mobile);
+  line-height: var(--nav-mobile-lh);
+  letter-spacing: var(--nav-mobile-ls);
 }
 
 button {
@@ -57,9 +122,37 @@ button {
   border: none;
 }
 
+@media (max-width: 968px) {
+  :root {
+    --h1: 3rem;
+    --h1-lh: 3rem;
+
+    --h2: 0.5rem;
+    --h2-lh: 16px;
+    --h2-ls: 0.75px;
+
+    --body: 0.688rem;
+    --body-lh: 22px;
+
+    --body-s: 0.75rem;
+
+    --strong: 1.5rem;
+    --strong-lh: 1.5rem;
+    --strong-ls: -0.9px;
+
+    --button: 0.563rem;
+    --button-ls: 1.93px;
+  }
+}
+
 @media (max-width: 500px) {
   :root {
-    --h1: 22px;
+    --h1: 2.5rem;
+    --h1-lh: 2.5rem;
+
+    --strong: 1.25rem;
+    --strong-lh: 1.25rem;
+    --strong-ls: -0.75px;
 
     --body: 0.938rem;
   }
