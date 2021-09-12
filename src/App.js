@@ -1,9 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
-import './App.css';
-
-require('dotenv').config();
+import './base.css';
+import './buttons.css';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const NoMatch = lazy(() => import('./pages/NoMatch/NoMatch'));
