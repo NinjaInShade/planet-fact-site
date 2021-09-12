@@ -28,6 +28,7 @@ export default function Navbar() {
           })}
         </ul>
         <button
+          aria-label='Hamburger'
           className={`navbar-hamburger ${mobileNav && 'navbar-hamburger-active'}`}
           onClick={() => {
             setMobileNav(!mobileNav);

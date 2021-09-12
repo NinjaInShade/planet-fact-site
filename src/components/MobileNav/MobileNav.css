@@ -28,6 +28,10 @@
   padding-top: 0;
 }
 
+.mobile-nav-link-a:focus {
+  outline: var(--white-20) dotted 2px;
+}
+
 .mobile-nav-link-a {
   display: flex;
   justify-content: space-between;
