@@ -28,6 +28,7 @@
   --gray: #838391;
   --white: #ffffff;
   --white-75: hsla(0, 0%, 100%, 0.75);
+  --white-25: hsla(0, 0%, 100%, 0.25);
   --white-20: hsla(0, 0%, 100%, 0.2);
 
   /* Typography */
