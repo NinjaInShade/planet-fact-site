@@ -26,8 +26,10 @@
   --black: #070724;
   --gray-dark: #38384f;
   --gray: #838391;
+  --button-hover: #313148;
   --white: #ffffff;
   --white-75: hsla(0, 0%, 100%, 0.75);
+  --white-50: hsla(0, 0%, 100%, 0.5);
   --white-25: hsla(0, 0%, 100%, 0.25);
   --white-20: hsla(0, 0%, 100%, 0.2);
   --white-10: hsla(0, 0%, 100%, 0.1);
@@ -78,6 +80,8 @@ body {
 
 h1 {
   font-family: 'Antonio', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
   font-size: var(--h1);
   line-height: var(--h1-lh);
 }

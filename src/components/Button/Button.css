@@ -3,7 +3,45 @@
   outline: none;
   border: none;
   background: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--white-20);
+  padding: 10.5px 28px;
+  width: 100%;
+}
+
+.btn-number,
+.btn-text {
   font-size: var(--button);
   line-height: var(--button-lh);
   letter-spacing: var(--button-ls);
+  font-weight: 700;
+}
+
+.btn-number {
+  color: var(--white-50);
+  margin-right: 25px;
+}
+
+.btn-text {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--button-hover);
+  border-color: var(--button-hover);
+}
+
+@media (max-width: 968px) {
+  .btn {
+    padding: 6.5px 20px;
+  }
+
+  .btn-number {
+    margin-right: 14px;
+  }
 }

@@ -13,6 +13,7 @@ export default function MobileNav({ active, setActive, links }) {
                 to={`/${link.name.toLowerCase()}`}
                 className={`nav-mobile mobile-nav-link-a mobile-nav-link-${link.name.toLocaleLowerCase()}`}
                 onClick={() => setActive(!active)}
+                tabIndex='-1'
               >
                 <div className='mobile-nav-circle-container'>
                   <div className='mobile-nav-circle'></div>

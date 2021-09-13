@@ -1,0 +1,69 @@
+.planet-page {
+  padding: 158px 40px 48px 40px;
+}
+
+.planet-page-container {
+  max-width: var(--container);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.planet-page-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-page-img-outer-container {
+  flex-grow: 1;
+}
+
+.planet-page-img-inner-container {
+}
+
+.planet-page-img {
+}
+
+.planet-page-text {
+  max-width: 350px;
+  width: 100%;
+}
+
+.planet-page-subtitle {
+  color: var(--white);
+  margin: 24px 0;
+}
+
+.planet-page-source {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white-50);
+  margin-bottom: 40px;
+}
+
+.planet-page-source a {
+  text-decoration: underline;
+  color: var(--white-50);
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.planet-page-text button:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.planet-page-stats {
+}
+
+@media (max-width: 968px) {
+  .planet-page {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .planet-page {
+    padding: 0 24px 48px 24px;
+  }
+}
