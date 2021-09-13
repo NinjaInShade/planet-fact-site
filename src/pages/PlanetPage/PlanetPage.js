@@ -148,7 +148,26 @@ export default function PlanetPage() {
               </div>
             </div>
           </section>
-          <section className='planet-page-stats'></section>
+          <section className='planet-page-stats'>
+            <ul className='planet-page-stats-list'>
+              <li className='planet-page-stats-list-item'>
+                <h2>Rotation time</h2>
+                <strong className='strong planet-page-stat'>{planetData.rotation}</strong>
+              </li>
+              <li className='planet-page-stats-list-item'>
+                <h2>Revolution time</h2>
+                <strong className='strong planet-page-stat'>{planetData.revolution}</strong>
+              </li>
+              <li className='planet-page-stats-list-item'>
+                <h2>Radius</h2>
+                <strong className='strong planet-page-stat'>{planetData.radius}</strong>
+              </li>
+              <li className='planet-page-stats-list-item'>
+                <h2>Average temp.</h2>
+                <strong className='strong planet-page-stat'>{planetData.temperature}</strong>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
     </>

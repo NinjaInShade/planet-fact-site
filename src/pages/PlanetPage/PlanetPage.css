@@ -42,6 +42,10 @@
   width: 100%;
 }
 
+.planet-page-text div:last-child {
+  width: 100%;
+}
+
 .planet-page-subtitle {
   color: var(--white);
   margin: 24px 0;
@@ -67,6 +71,28 @@
 }
 
 .planet-page-stats {
+  margin-top: 88px;
+}
+
+.planet-page-stats-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+}
+
+.planet-page-stats-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid var(--white-20);
+  padding: 20px 24px 30px 24px;
+  min-width: 0;
+}
+
+.planet-page-stat {
+  display: block;
+  margin-top: 10px;
 }
 
 .planet-page-img-mercury {
@@ -134,6 +160,24 @@
 
   .planet-page-subtitle {
     margin-bottom: 32px;
+  }
+
+  .planet-page-stats-list {
+    gap: 11px;
+  }
+
+  .planet-page-stats {
+    margin-top: 28px;
+  }
+
+  .planet-page-stat {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .planet-page-text button {
+    width: 230px;
   }
 }
 
@@ -259,5 +303,21 @@
 
   .planet-img-geology {
     max-width: 50px;
+    top: 60%;
+  }
+
+  .planet-page-stats-list {
+    grid-template-columns: 1fr;
+  }
+
+  .planet-page-stats-list-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 24px;
+  }
+
+  .planet-page-stat {
+    margin: 0;
   }
 }

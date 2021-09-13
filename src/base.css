@@ -87,6 +87,8 @@ h1 {
 }
 
 h2 {
+  text-transform: uppercase;
+  color: var(--white-50);
   font-size: var(--h2);
   line-height: var(--h2-lh);
   letter-spacing: var(--h2-ls);
@@ -104,6 +106,8 @@ h2 {
 
 .strong {
   font-family: 'Antonio', sans-serif;
+  text-transform: uppercase;
+  color: var(--white);
   font-size: var(--strong);
   line-height: var(--strong-lh);
   letter-spacing: var(--strong-ls);
