@@ -38,7 +38,22 @@ export default function PlanetPage() {
         <section className='planet-page-main'>
           <div className='planet-page-img-outer-container'>
             <div className='planet-page-img-inner-container'>
-              <img src={`/assets/${planetData.images.planet}`} alt={`${planetData.name} illustration`} />
+              {(activeTab === 'overview' || activeTab === 'geology') && (
+                <img src={`/assets/${planetData.images.planet}`} alt={`${planetData.name} illustration`} />
+              )}
+              {activeTab === 'structure' && (
+                <img
+                  src={`/assets/${planetData.images.internal}`}
+                  alt={`${planetData.name} internal structure illustration overlaying the main planet illustration`}
+                />
+              )}
+              {activeTab === 'geology' && (
+                <img
+                  src={`/assets/${planetData.images.geology}`}
+                  alt={`${planetData.name} surface geology illustration`}
+                  className='planet-img-geology'
+                />
+              )}
             </div>
           </div>
           <div className='planet-page-text'>

@@ -22,9 +22,18 @@
 }
 
 .planet-page-img-inner-container {
+  position: relative;
 }
 
 .planet-page-img {
+}
+
+.planet-img-geology {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 75%;
+  max-width: 165px;
 }
 
 .planet-page-text {
