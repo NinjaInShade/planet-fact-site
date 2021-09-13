@@ -1,7 +1,8 @@
 .mobile-nav {
   position: absolute;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
   background-color: var(--black);
   height: calc(100vh - 70px);
   top: calc(100% + 1px);
@@ -10,10 +11,13 @@
   width: 100%;
   z-index: 2;
   left: 0;
+  opacity: 0;
 }
 
 .mobile-nav-active {
   max-height: 100vh;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .mobile-nav-link {

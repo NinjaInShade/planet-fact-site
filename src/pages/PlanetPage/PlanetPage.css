@@ -25,9 +25,6 @@
   position: relative;
 }
 
-.planet-page-img {
-}
-
 .planet-img-geology {
   position: absolute;
   transform: translateX(-50%);
@@ -37,6 +34,10 @@
 }
 
 .planet-page-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   max-width: 350px;
   width: 100%;
 }
@@ -68,14 +69,195 @@
 .planet-page-stats {
 }
 
+.planet-page-img-mercury {
+  max-width: 184px;
+}
+.planet-page-img-venus {
+  max-width: 253px;
+}
+.planet-page-img-earth {
+  max-width: 285px;
+}
+.planet-page-img-mars {
+  max-width: 213px;
+}
+.planet-page-img-jupiter {
+  max-width: 369px;
+}
+.planet-page-img-saturn {
+  max-width: 422px;
+}
+.planet-page-img-uranus {
+  max-width: 290px;
+}
+.planet-page-img-neptune {
+  max-width: 285px;
+}
+
+.planet-page-mobile-tabs {
+  display: none;
+  padding: 0 24px;
+}
+
 @media (max-width: 968px) {
   .planet-page {
     padding-top: 0;
+  }
+
+  .planet-page-main {
+    flex-direction: column;
+  }
+
+  .planet-page-img-outer-container {
+    height: 460px;
+  }
+
+  .planet-page-text {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+  }
+
+  .planet-page-text div:first-child {
+    margin-right: 30px;
+    max-width: 340px;
+  }
+
+  .planet-page-text button {
+    width: 280px;
+  }
+
+  .planet-page-source {
+    margin-bottom: 0;
+  }
+
+  .planet-page-subtitle {
+    margin-bottom: 32px;
   }
 }
 
 @media (max-width: 500px) {
   .planet-page {
     padding: 0 24px 48px 24px;
+  }
+
+  .planet-page-img-outer-container {
+    height: 303px;
+  }
+
+  .planet-page-text {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .planet-page-text > * {
+    text-align: center;
+  }
+
+  .planet-page-source {
+    justify-content: center;
+  }
+
+  .planet-page-text div:first-child {
+    margin-right: 0;
+    max-width: none;
+  }
+
+  .planet-page-text div:last-child {
+    display: none;
+  }
+
+  .planet-page-subtitle {
+    margin-top: 16px;
+  }
+
+  .planet-page-img-mercury {
+    max-width: 111px;
+  }
+  .planet-page-img-venus {
+    max-width: 154px;
+  }
+  .planet-page-img-earth {
+    max-width: 173px;
+  }
+  .planet-page-img-mars {
+    max-width: 129px;
+  }
+  .planet-page-img-jupiter {
+    max-width: 224px;
+  }
+  .planet-page-img-saturn {
+    max-width: 256px;
+  }
+  .planet-page-img-uranus {
+    max-width: 176px;
+  }
+  .planet-page-img-neptune {
+    max-width: 173px;
+  }
+
+  .planet-page-mobile-tabs {
+    border-bottom: 1px solid var(--white-20);
+    display: block;
+  }
+
+  .planet-page-mobile-tabs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .planet-page-mobile-tabs ul * {
+    width: 100%;
+  }
+
+  .planet-page-mobile-tab {
+    text-transform: uppercase;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    font-size: var(--button);
+    line-height: var(--button-lh);
+    color: var(--white-50);
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  .planet-page-mobile-tab:hover {
+    transition: all 0.4s ease-in-out;
+    color: var(--white);
+  }
+
+  .planet-page-mobile-tab:focus {
+    outline: var(--white-20) solid 2px;
+  }
+
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-mercury {
+    border-bottom: 4px solid var(--mercury);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-venus {
+    border-bottom: 4px solid var(--venus);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-earth {
+    border-bottom: 4px solid var(--earth);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-mars {
+    border-bottom: 4px solid var(--mars);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-jupiter {
+    border-bottom: 4px solid var(--jupiter);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-saturn {
+    border-bottom: 4px solid var(--saturn);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-uranus {
+    border-bottom: 4px solid var(--uranus);
+  }
+  .planet-page-mobile-tab:hover.planet-page-mobile-tab-neptune {
+    border-bottom: 4px solid var(--neptune);
+  }
+
+  .planet-img-geology {
+    max-width: 50px;
   }
 }
