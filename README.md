@@ -25,26 +25,37 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshots/Desktop_solution.png) -->
-<!-- ![](./screenshots/Mobile_solution.png) -->
+![](./screenshots/Desktop_solution.png)
+![](./screenshots/Desktop_2_solution.png)
+![](./screenshots/Desktop_3_solution.png)
+![](./screenshots/Tablet_solution.png)
+![](./screenshots/Mobile_solution.png)
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-order-summary-card-TFXa8ZDRV) -->
-<!-- - Live Site URL: (https://lm-order-summary-component.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-planet-fact-site-built-with-reactreactrouter-ZNPUZ9PCj)
+- Live Site URL: (https://lm-planet-fact-site.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- Semantic HTML5/JSX markup
 - CSS custom properties/vars
 - Desktop-first workflow
 - React / React-router
+- JSON data
+- CSS Grid
 
 ### What I learned
 
-Not done yet.
+I had already done dynamic pages with React in the past, but I had a break for a while, so it was nice to do it again, and it worked very well and had little issues.
+
+One thing I definitely could improve on is adding extra data into the local JSON file. For things like the planet images max width's at smaller screens, each image had a different max width, however I only recieved assets for desktop, and the JSON file didn't specify this max width data.
+
+I didn't improve on this because I treated it like a real API, one that I did not code and have no access to it. This did make small parts of my code not follow the DRY (Do Not Repeat Yourself) principle, but for small things.
+
+If I could've spoken to the design team who designed this, I would probably ask for multiple versions of one image (desktop, tablet, mobile) or asked them to use some sort of % value for max widths that's uniform across all images.
 
 ## Author
 
