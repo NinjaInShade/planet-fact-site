@@ -8,6 +8,7 @@ import './PlanetPage.css';
 
 export default function PlanetPage() {
   const [planetData, setPlanetData] = useState();
+
   const [activeTab, setActiveTab] = useState('overview');
 
   let { planet } = useParams();
@@ -37,15 +38,15 @@ export default function PlanetPage() {
         <section className='planet-page-main'>
           <div className='planet-page-img-outer-container'>
             <div className='planet-page-img-inner-container'>
-              {/* <img src={planetData.images.planet} alt={`${planetData.name} illustration`} /> */}
+              <img src={`/assets/${planetData.images.planet}`} alt={`${planetData.name} illustration`} />
             </div>
           </div>
           <div className='planet-page-text'>
             <h1>{planetData.name}</h1>
-            <p className='body planet-page-subtitle'>{planetData.overview.content}</p>
+            <p className='body planet-page-subtitle'>{planetData[activeTab].content}</p>
             <p className='body-s planet-page-source'>
               Source{'\u00A0'}:{'\u00A0'}
-              <a href={planetData.overview.source} target='_blank' rel='noreferrer'>
+              <a href={planetData[activeTab].source} target='_blank' rel='noreferrer'>
                 Wikipedia
               </a>
               <svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'>
@@ -66,16 +67,16 @@ export default function PlanetPage() {
             <Button
               number='02'
               text='Internal Structure'
-              active={activeTab === 'internal'}
+              active={activeTab === 'structure'}
               activeColour={planetData.name.toLowerCase()}
-              onClick={() => setActiveTabHandler('internal')}
+              onClick={() => setActiveTabHandler('structure')}
             />
             <Button
               number='03'
               text='Surface Geology'
-              active={activeTab === 'surface'}
+              active={activeTab === 'geology'}
               activeColour={planetData.name.toLowerCase()}
-              onClick={() => setActiveTabHandler('surface')}
+              onClick={() => setActiveTabHandler('geology')}
             />
           </div>
         </section>
