@@ -8,8 +8,8 @@ export default function Button({ number, text, active, activeColour, onClick }) 
       style={active ? { backgroundColor: `var(--${activeColour})`, border: `1px solid var(--${activeColour})` } : {}}
       onClick={onClick}
     >
-      <p className='btn-number'>{number}</p>
-      <p className='btn-text'>{text}</p>
+      <span className='btn-number'>{number}</span>
+      <span className='btn-text'>{text}</span>
     </button>
   );
 }

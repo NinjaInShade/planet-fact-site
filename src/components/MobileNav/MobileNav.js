@@ -4,7 +4,11 @@ import './MobileNav.css';
 
 export default function MobileNav({ active, setActive, links }) {
   return (
-    <nav className={`mobile-nav ${active && 'mobile-nav-active'}`}>
+    <nav
+      className={`mobile-nav ${active && 'mobile-nav-active'}`}
+      role='navigation'
+      aria-labelledby='mobile page navigation'
+    >
       <ul>
         {links.map((link, index) => {
           return (
