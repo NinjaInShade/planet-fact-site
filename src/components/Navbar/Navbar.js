@@ -9,7 +9,7 @@ export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
 
   return (
-    <nav className='navbar' role='navigation' aria-labelledby='page navigation'>
+    <nav className='navbar'>
       <MobileNav active={mobileNav} setActive={setMobileNav} links={PlanetsDataJSON} />
       <div className='navbar-container'>
         <strong className='logo'>The Planets</strong>

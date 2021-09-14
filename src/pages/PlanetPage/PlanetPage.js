@@ -34,7 +34,7 @@ export default function PlanetPage() {
 
   return planetData ? (
     <>
-      <nav className='planet-page-mobile-tabs' role='navigation' aria-labelledby='mobile inter page navigation'>
+      <nav className='planet-page-mobile-tabs'>
         <ul>
           <li>
             <button
